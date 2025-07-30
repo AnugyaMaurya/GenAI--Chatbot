@@ -62,4 +62,4 @@ if file is not None:
         #chain -> take the question, get relevant document, pass it to the LLM, generate the output
         chain = load_qa_chain(llm, chain_type="stuff")
         response = chain.run(input_documents = match, question = user_question)
-        # st.write(response)
+        st.write(response)
